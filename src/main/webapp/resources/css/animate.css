@@ -1,0 +1,30 @@
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+    
+  }
+}
+
+.headerSubmenu.ng-hide-remove{
+  animation: slideDown 0.4s both ease-in;
+  z-index:5;
+}
+
+.headerSubmenu.ng-hide-add{
+  animation: slideInUp 0.1s both ease-in;
+  z-index:5;
+}

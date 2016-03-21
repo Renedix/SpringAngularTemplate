@@ -1,0 +1,81 @@
+.noselect{
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;           /* non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+#header{
+  position:absolute;
+  height:50px;
+  width:100%;
+  background-color:black;
+  left:0px;
+  top:0px;
+  z-index:100;
+}
+
+.headerLink{
+  color:white;
+  display:inline-block;
+  padding:15px;
+  text-decoration:none;
+  height:20px;
+  font-size:1.5em;
+}
+
+.headerLink:hover{
+  color:black;
+  background-color:white;
+}
+
+.headerLink:active{
+  color:white;
+  background-color:inherit;
+}
+
+.headerSubmenu{
+  height:30px;
+  background-color:black;
+  color:white;
+  top:50px;
+  left:0px;
+  position:absolute;
+  border-width:1px;
+  border-color:gray;
+  border-style:solid;
+}
+
+.headerSubmenuItem{
+  color:white;
+  display:inline-block;
+  padding:5px;
+  padding-left:15px;
+  padding-right:15px;
+  text-decoration:none;
+  height:20px;
+}
+
+.headerSubmenuItem:hover{
+  color:black;
+  background-color:white;
+}
+
+.headerSubmenuItem:active{
+  color:white;
+  background-color:inherit;
+}
+
+.headerBumper{
+  width:25px;
+  display:inline-block;
+}
+
+.viewContent{
+  position:absolute;
+  top:75px;
+  padding:25px;
+}

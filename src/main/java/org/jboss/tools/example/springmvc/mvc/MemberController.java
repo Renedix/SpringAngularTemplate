@@ -26,6 +26,18 @@ public class MemberController
         model.addAttribute("members", memberDao.findAllOrderedByName());
         return "index";
     }
+	
+	@RequestMapping(value="view1", method=RequestMethod.GET)
+    public String directToView1(Model model)
+    {
+        return "View1";
+    }
+	
+	@RequestMapping(value="view2", method=RequestMethod.GET)
+    public String directToView2(Model model)
+    {
+        return "View2";
+    }
 
     @RequestMapping(method=RequestMethod.POST)
     public String registerNewMember(@Valid @ModelAttribute("newMember") Member newMember, BindingResult result, Model model)
