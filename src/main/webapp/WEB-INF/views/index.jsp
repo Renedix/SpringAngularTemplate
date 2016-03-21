@@ -16,7 +16,7 @@
 		<link rel="stylesheet" type="text/css" href="<c:url value="/static/resources/css/style.css"/>"/>
 	
 		<script src="/static/resources/js/app.js"></script>
-		<script src="/static/resources/js/Directives"></script>
+		<script src="/static/resources/js/Directives.js"></script>
 		<script src="/static/resources/js/View1Controller.js"></script>
 		<script src="/static/resources/js/View2Controller.js"></script>
 		<script src="/static/resources/js/MainController.js"></script>
@@ -37,7 +37,7 @@
 		  </a>
 	  </div>
 
-	  <div class="headerSubmenu" ng-show="submenuHidden('Submenu1')" style="left:222px">
+	  <div class="headerSubmenu" ng-show="submenuHidden('Submenu1')" style="left:209px">
 		<a class="headerSubmenuItem noselect" href="">Item 1</a>
 		<a class="headerSubmenuItem noselect" href="">Item 2</a>
 	  </div>
