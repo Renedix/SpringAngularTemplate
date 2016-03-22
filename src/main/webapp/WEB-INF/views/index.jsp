@@ -45,7 +45,7 @@
 		<a class="headerSubmenuItem noselect" href="">Item 2</a>
 	  </div>
 	  
-	  <div class="headerSubmenu" ng-show="submenuHidden('Submenu2')" style="left:345px">
+	  <div class="headerSubmenu" ng-show="submenuHidden('Submenu2')" style="left:397px">
 		<a class="headerSubmenuItem noselect" href="">Item 1</a><br>
 		<a class="headerSubmenuItem noselect" href="">Item 2</a><br>
 		<a class="headerSubmenuItem noselect" href="">Item 3</a><br>
