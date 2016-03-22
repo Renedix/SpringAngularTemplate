@@ -24,7 +24,7 @@
 
 	<body ng-app="ApplicationName" ng-controller="MainController">
 
-	  <div id="header">
+  <div id="header">
 		<span class="headerBumper"></span>
 		<a class="headerLink noselect" href="" ng-click="navigateToView('View1')">
 			View1
@@ -33,13 +33,24 @@
 			View2
 		  </a>
 		<a class="headerLink noselect" href="" ng-click="toggleSubmenu('Submenu1')">
-			Submenu1
+			Horizontal Menu
+		  </a>
+		<a class="headerLink noselect" href="" ng-click="toggleSubmenu('Submenu2')">
+			Vertical Menu
 		  </a>
 	  </div>
 
 	  <div class="headerSubmenu" ng-show="submenuHidden('Submenu1')" style="left:209px">
 		<a class="headerSubmenuItem noselect" href="">Item 1</a>
 		<a class="headerSubmenuItem noselect" href="">Item 2</a>
+	  </div>
+	  
+	  <div class="headerSubmenu" ng-show="submenuHidden('Submenu2')" style="left:345px">
+		<a class="headerSubmenuItem noselect" href="">Item 1</a><br>
+		<a class="headerSubmenuItem noselect" href="">Item 2</a><br>
+		<a class="headerSubmenuItem noselect" href="">Item 3</a><br>
+		<a class="headerSubmenuItem noselect" href="">Item 4</a><br>
+		<a class="headerSubmenuItem noselect" href="">Item 5</a>
 	  </div>
 
 	  <div ng-view class="viewContent"></div>

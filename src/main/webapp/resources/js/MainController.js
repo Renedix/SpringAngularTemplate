@@ -13,6 +13,15 @@
     var submenuVisibility = [];
     
     $scope.toggleSubmenu = function(submenuName) {
+      
+      // Hide all other dropdown menus
+      if (!submenuVisibility[submenuName]){
+        for (var menuItem in submenuVisibility){
+            submenuVisibility[menuItem] = false;
+        }
+      }
+      
+      // Invert the visibility
       submenuVisibility[submenuName] =!submenuVisibility[submenuName];
     };
 
