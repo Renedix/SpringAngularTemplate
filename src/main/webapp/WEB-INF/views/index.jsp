@@ -22,9 +22,9 @@
 		<script src="/static/resources/js/MainController.js"></script>
 	</head>
 
-	<body ng-app="ApplicationName" ng-controller="MainController">
+	<body ng-app="ApplicationName" ng-controller="MainController" style="background-color:white">
 
-  <div id="header">
+          <div id="header">
 		<span class="headerBumper"></span>
 		<a class="headerLink noselect" href="" ng-click="navigateToView('View1')">
 			View1
