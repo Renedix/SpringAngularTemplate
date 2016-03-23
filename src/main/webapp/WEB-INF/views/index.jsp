@@ -53,6 +53,9 @@
 		<a class="headerSubmenuItem noselect" href="">Item 5</a>
 	  </div>
 
-	  <div ng-view class="viewContent"></div>
+	  <div class="sideBar" style="float:left;left:0px"></div>
+          <div ng-view class="viewContent"></div>  
+          <div class="sideBar" style="float:right;right:0px"></div>
+          
 	</body>
 </html>
